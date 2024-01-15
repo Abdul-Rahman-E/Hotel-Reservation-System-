@@ -3,6 +3,8 @@
 
 <head>
   <meta charset="UTF-8">
+  <!-- GitHub: Start of Hidden Section -->
+  <!--
   <title>Hotel Reservation System Documentation</title>
   <style>
     body {
@@ -33,6 +35,8 @@
       margin-bottom: 10px;
     }
   </style>
+  -->
+  <!-- GitHub: End of Hidden Section -->
 </head>
 
 <body>
