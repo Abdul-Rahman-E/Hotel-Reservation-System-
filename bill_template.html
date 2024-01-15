@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Bill</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            background-color: #a6a6a6;
+            margin: 20px auto;
+            padding: 20px;
+            box-sizing: border-box;
+            max-width: 600px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            border: solid 2px #8a8a8a;
+
+        }
+
+        header {
+            text-align: center;
+            padding: 10px;
+            color: #fad052;
+            border-radius: 12px 12px 0 0;
+            font-family: 'Great Vibes', cursive;
+            font-size: 20px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        h2 {
+            margin-top: 5px;
+        }
+
+        hr {
+            border: 1px solid #ddd;
+            margin: 20px 0;
+        }
+
+        .all_details {
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #fff;
+        }
+
+        .details-section {
+            margin: 20px 0;
+        }
+
+        .details-section p {
+            margin: 8px 0;
+            color: #555;
+        }
+
+        .totals-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .totals-section div {
+            flex: 1;
+        }
+
+        .totals-section p {
+            margin: 8px 0;
+            color: #555;
+
+        }
+
+        .thank-you {
+            text-align: center;
+            margin-top: 20px;
+            color: #fff;
+        }
+
+        .all_details div {
+            margin-left: 20px;
+        }
+
+        .bottom-detail {
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #fff;
+        }
+
+        .bottom-detail div {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>{{hotel_name}}</h1>
+            <h2>{{location}}</h2>
+        </header>
+        <hr>
+        <div class="all_details">
+            <div class="details-section">
+                <p><strong>Guest Information:</strong></p>
+                <p>Name: {{guest_name}}</p>
+                <p>Email: {{guest_email}}</p>
+                <p>Phone: {{guest_phone}}</p>
+            </div>
+
+            <div class="details-section">
+                <p><strong>Booking Details:</strong></p>
+                <p>Booking ID: {{booking_id}}</p>
+                <p>Check-In Date: {{check_in_date}}</p>
+                <p>Check-Out Date: {{check_out_date}}</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="details-section bottom-detail">
+            <div>
+                <p><strong>Room Details:</strong></p>
+                <p>Room Type: {{room_type}}</p>
+                <p>Number of rooms: {{room_type}}</p>
+                <p>Room Number: {{room_number}}</p>
+                <p>Price per Night: {{price_per_night}}</p>
+                <p>Number of Nights: {{number_of_nights}}</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="totals-section" style="background-color: #fff;; padding: 12px; border-radius: 8px;">
+            <div>
+                <p><strong>Subtotal:</strong> {{subtotal}}</p>
+                <p><strong>Tax:</strong> {{tax}}</p>
+            </div>
+            <div style="text-align: right;">
+                <p><strong>Total: ₹</strong> {{total}}</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <p class="thank-you">Thank you for choosing {{hotelName}} Hotel. We hope you enjoy your stay!</p>
+    </div>
+
+</body>
+
+</html>
